@@ -1,11 +1,13 @@
 import "./App.css";
-import useCounter from "./hooks/useCounter";
+import { Counter } from "./Components/counter";
+import { FetchPost } from "./Components/fetchPost";
 
 function App() {
-  const { count,IncreaseCount } = useCounter();
+  
   return (
     <>
-      <button onClick={IncreaseCount}>Increase {count}</button>
+     {/* <Counter/> */}
+     <FetchPost/>
     </>
   );
 }
