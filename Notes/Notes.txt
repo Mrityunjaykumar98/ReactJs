@@ -1,2 +1,5 @@
 useState - it Stores a state variable, re-render a component when the variable changes.
 useEffect - it run an effect whenever a dependency changes.
+
+React returns first, effect get called later.
+e.g-> refer usePrev.js
