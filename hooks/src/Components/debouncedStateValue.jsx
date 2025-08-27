@@ -3,7 +3,7 @@ import { useDebounceStateValue } from "../hooks/useDebounce";
 
 export const DebouncedStateValue = () => {
   const [inputValue, setInputValue] = useState("");
-  const debouncedValue = useDebounceStateValue(inputValue);
+  const debouncedValue = useDebounceStateValue(inputValue,200);
 
   function search(e) {
     setInputValue(e.target.value);
